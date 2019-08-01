@@ -1,24 +1,9 @@
-# README
+Tu trouvas sur ce fichier une base de données avec de fausses données, qui utilise le système N to N, avec l'utilisation des belongs_to et has_many through
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Tu as 6 tables: 'Doctor','Patient', 'Specialty', 'City', 'DoctorSpecialty'  et 'Appointment'  interconnectées via des relations.
 
-Things you may want to cover:
+Que faire en ouvrant le dossier?
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$bundle install
+$rails db:migrate
+$rails db:seed
